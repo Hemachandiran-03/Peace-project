@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite</title>
+
+    <link rel="stylesheet" href="invite.css">
+
+    <!-- Bootstrap style css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+
+    <h1 class="display-4 text-center bg-secondary text-white p-3 m-0">Invite</h1>
+
+
+    <div class="container-fluid bg-warning p-3" id="bodyConatiner">
+
+        <!-- service details -->
+        <div class="container bg-success p-5 mt-5 rounded" id="selectServiceDiv">
+
+            <p class="display-6 text-white text-center">Service Details</p>
+
+            <select for="select-menu" name="service" id="inviteService" class="form-control form-control-lg">
+                <option selected>Select a service</option>
+                <option value="1">Individual Counseling</option>
+                <option value="2">Relationship Counseling</option>
+                <option value="3">Career Counseling</option>
+                <option value="4">Educational Counseling</option>
+            </select>
+
+        </div>
+
+        <!-- available doctors list -->
+        <div class="container bg-success p-5 mt-5 rounded" id="selectDoctorDiv">
+
+            <p class="display-6 text-white text-center">Select Doctor</p>
+
+            <div class="alert alert-secondary" role="alert" id="noDoctorAvailableAlert">
+                Currently no doctor is available for this counseling!. We are working on it.
+            </div>
+
+            <ol class="list-group list-group-numbered" id="doctorList"></ol>
+
+        </div>
+
+
+        <!-- doctor details -->
+        <div class="container bg-success p-5 mt-5 rounded" id="doctorDetailsDiv">
+
+            <div class="row">
+
+                <p class="display-6 text-white text-center">Doctor Details</p>
+
+                <div class="col">
+                    <!-- name input -->
+                    <div class="form-outline mb-4"><label class="form-label text-white">Name</label>
+                        <input type="text" id="docName" class="form-control form-control-lg" disabled="disabled"
+                            placeholder="Enter a name" />
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-3">
+                        <label class="form-label text-white">Email</label>
+                        <input type="email" id="docEmail" class="form-control form-control-lg" disabled="disabled"
+                            placeholder="Enter a valid email address" />
+                    </div>
+
+
+                </div>
+
+                <div class="col">
+                    <!-- service input -->
+                    <div class="form-outline mb-4"><label class="form-label text-white">Service</label>
+                        <input type="text" id="docService" class="form-control form-control-lg" disabled="disabled"
+                            placeholder="Enter a service" />
+                    </div>
+
+                    <!-- phone input -->
+                    <div class="form-outline mb-4"><label class="form-label text-white">Contact Number</label>
+                        <input type="text" id="docPhone" class="form-control form-control-lg" disabled="disabled"
+                            placeholder="Enter a contact number" />
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- user details -->
+        <div class="container bg-success p-5 mt-5 mb-5 rounded" id="userDetailsDiv">
+
+            <div class="row">
+
+                <p class="display-6 text-white text-center">User Details</p>
+
+                <div class="col">
+
+                    <!-- username input -->
+                    <div class="form-outline mb-4"><label class="form-label text-white">Username</label>
+                        <input type="text" id="userUsername" class="form-control form-control-lg" disabled="disabled"
+                            placeholder="Enter a valid username" />
+                    </div>
+
+                    <!-- firstname input -->
+                    <div class="form-outline mb-4"><label class="form-label text-white">Firstname</label>
+                        <input type="text" id="userFirstName" class="form-control form-control-lg" disabled="disabled"
+                            placeholder="Enter a firstname" />
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-3">
+                        <label class="form-label text-white">Email</label>
+                        <input type="email" id="userEmail" class="form-control form-control-lg"
+                            placeholder="Enter a valid email address" />
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <!-- country input -->
+                    <div class="form-outline mb-4"><label class="form-label text-white">Country</label>
+                        <input type="text" id="userCountry" class="form-control form-control-lg" disabled="disabled"
+                            placeholder="Enter a country name" />
+                    </div>
+
+                    <!-- lastname input -->
+                    <div class="form-outline mb-4"><label class="form-label text-white">Lastname</label>
+                        <input type="text" id="userLastName" class="form-control form-control-lg" disabled="disabled"
+                            placeholder="Enter a lastname" />
+                    </div>
+
+                    <!-- phone input -->
+                    <div class="form-outline mb-4"><label class="form-label text-white">Contact Number</label>
+                        <input type="text" id="userPhone" class="form-control form-control-lg"
+                            placeholder="Enter a contact number" />
+                    </div>
+
+                </div>
+
+                <button type="button" class="btn btn-primary justify-content-center" onclick="inviteOnclick()">Send
+                    Request</button>
+
+            </div>
+
+        </div>
+
+
+        <footer class="pt-5">
+            <a class="btn btn-primary text-white" href="../home/home.html">Back to Home</a>
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- jquery link -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+
+    <script src="invite.js"></script>
+
+</body>
+
+</html>

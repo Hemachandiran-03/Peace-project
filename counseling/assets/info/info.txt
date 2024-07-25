@@ -1,0 +1,5 @@
+types of Counseling:
+    Individual counseling
+    Relationship counseling
+    Career counseling 
+    Educational Counseling

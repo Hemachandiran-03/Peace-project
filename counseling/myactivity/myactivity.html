@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Activity</title>
+
+    <link rel="stylesheet" href="myactivity.css">
+
+    <!-- Bootstrap style css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+
+    <div class="display-6 text-center p-3 bg-secondary text-white">
+        My Activity
+    </div>
+
+    <!-- Requested -->
+    <div class="container-fluid bg-light p-5 pb-0">
+        <h3 class="mb-4">Requested : </h3>
+
+        <div class="alert alert-secondary" role="alert" id="requestEmptyAlert">
+            No Requested counseling found!
+        </div>
+
+        <div class="row" id="requestedBox">
+
+            <!-- <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Individual Counseling</h5>
+                        <p class="card-text">Doctor name</p>
+                        <button class="btn btn-secondary" disabled>Requested <i class="bi bi-clock-fill"></i></button>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <!-- On going -->
+    <div class="container-fluid bg-light p-5 pb-0">
+        <hr>
+        <h3 class="mb-4">Ongoing : </h3>
+
+        <div class="alert alert-secondary" role="alert" id="ongoingEmptyAlert">
+            No Ongoing counseling found!
+        </div>
+
+        <div class="row" id="ongoingBox">
+
+            <!-- <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Individual Counseling</h5>
+                        <p class="card-text">Doctor name</p>
+                        <button class="btn btn-primary">Details</button>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <!-- Completed -->
+    <div class="container-fluid bg-light p-5">
+        <hr>
+        <h3 class="mb-4">Completed : </h3>
+        
+        <div class="alert alert-secondary" role="alert" id="completedEmptyAlert">
+            No Completed counseling found!
+        </div>
+
+        <div class="row" id="completedBox">
+
+            <!-- <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Individual Counseling</h5>
+                        <p class="card-text">Doctor name</p>
+                        <button class="btn btn-success"> 5 <i class="bi bi-star-fill"></i></button>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+
+
+        <footer class="pt-5">
+            <hr>
+            <a class="btn btn-primary text-white" href="../home/home.html">Back to Home</a>
+        </footer>
+    </div>
+
+
+    <!-- jquery link -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+
+    <script src="myactivity.js"></script>
+
+</body>
+
+</html>

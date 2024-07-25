@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite Details</title>
+
+    <link rel="stylesheet" href="inviteDetails.css">
+
+    <!-- Bootstrap style css -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <div class="display-6 text-center p-3 bg-secondary text-white">
+        Invite Details
+    </div>
+
+    <div class="container-fluid bg-light p-5">
+
+        <!-- Service name -->
+        <div class="form-outline mb-4"><label class="form-label text-dark">Service name</label>
+            <input type="text" id="serviceName" class="form-control form-control-lg" disabled="disabled"
+                placeholder="Enter a valid username" />
+        </div>
+
+        <!-- Doctor name -->
+        <div class="form-outline mb-4"><label class="form-label text-dark">Doctor name</label>
+            <input type="text" id="doctorName" class="form-control form-control-lg" disabled="disabled"
+                placeholder="Enter a valid username" />
+        </div>
+
+        <!-- Service Status -->
+        <div class="form-outline mb-4"><label class="form-label text-dark">Service status</label>
+            <input type="text" id="serviceStatus" class="form-control form-control-lg" disabled="disabled"
+                placeholder="Enter a valid username" />
+        </div>
+
+        <button class="btn btn-primary" onclick="onClickCompleted()">Mark as Completed & Submit feedback</button>
+
+
+        <footer class="pt-5">
+            <hr>
+            <button class="btn btn-secondary text-white" onclick="onBack()">Back</button>
+            <a class="btn btn-primary text-white" href="../../home/home.html">Back to Home</a>
+        </footer>
+    </div>
+
+
+
+
+    <!-- jquery link -->
+    <script src="../../assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="../../assets/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="inviteDetails.js"></script>
+</body>
+
+</html>

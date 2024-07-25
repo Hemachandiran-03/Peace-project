@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>personal counseling</title>
+  <link rel="stylesheet" href="home.css">
+
+  <!-- Bootstrap style css -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+
+  <div class="container-fluid m-0">
+    <div class="row">
+
+      <!-- nav bar -->
+      <div class="col-12 p-0">
+        <header>
+
+          <nav class="navbar bg-warning navbar-expand-lg">
+
+            <div class="container-fluid">
+
+              <a href="#" class="navbar-brand">
+                <img class="img-fluid" src="logo_img.png" width="75px" height="75px">
+                <img class="img-fluid" src="logo_text.png" width="250px" height="75px">
+              </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="myNavBar">
+
+                <ul class="navbar-nav me-auto">
+
+                  <li class="nav-item">
+                    <a id="nav-item-myacc" class="nav-link active" onclick="onClickMyAcc()" href="#">My Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="..\user\register\register.html">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="nav-item-invite" class="nav-link" href="..\invite\Invite.html">Invite</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="nav-item-myact" class="nav-link" href="..\myactivity\myactivity.html">My Activity</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="..\about\about.html">About</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="..\service\service.html">Service</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="..\admin\adminlogin\adminlogin.html">Admin</a>
+                  </li>
+
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Doctor
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="..\doctor\doctorregister\doctorregister.html">Register</a></li>
+                      <li><a class="dropdown-item" href="..\doctor\doctorlogin\doctorlogin.html">Login</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a id="nav-item-logout" class="nav-link" href="#" data-bs-toggle="modal"
+                      data-bs-target="#logoutModel">Log out</a>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </nav>
+        </header>
+      </div>
+
+      <!-- Content -->
+      <div class="col-12 p-0">
+        <div id="carousel" class="carousel slide">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="../assets/img/individual-counseling.jpg" class="bg-img d-block w-100 opacity-75 img-fluid"
+                alt="">
+
+              <div class="carousel-caption d-none d-md-block">
+                <img class="rounded-4 border border-2 border-secondary img-fluid"
+                  src="../assets/img/individual-counseling.jpg" alt="">
+                <h5 class="display-4 fw-medium text-dark p-3">Individual counseling</h5>
+                <p class="text-dark p-2 lead">Individual counseling is a one on one counseling process of a patient and
+                  a
+                  trained
+                  psychiatrist,
+                  psychotherapist or psychologist.
+                  <a href="#" onclick="onClickLearnMore()" class="text-reset text-info-emphasis">click to Learn
+                    more</a>.
+                </p>
+              </div>
+
+
+            </div>
+
+            <div class="carousel-item">
+              <img src="../assets/img/relationship-counselling.jpg" class="bg-img d-block w-100 img-fluid" alt="...">
+
+              <div class="carousel-caption d-none d-md-block">
+                <img class="rounded-4 border border-2 border-secondary img-fluid"
+                  src="../assets/img/relationship-counselling.jpg" alt="">
+                <h5 class="display-4 fw-medium text-dark p-3">Relationship counseling</h5>
+                <p class="text-dark p-2 lead">Relationship counseling is the counseling that the parties of a
+                  relationship
+                  undergo, in order to resolve relationship issues and foster better relationships.
+                  <a href="#" onclick="onClickLearnMore()" class="text-reset text-info-emphasis">click to Learn
+                    more</a>.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+              <img src="../assets/img/career-counseling.jpg" class="bg-img d-block w-100 img-fluid" alt="...">
+
+              <div class="carousel-caption d-none d-md-block">
+                <img class="rounded-4 border border-2 border-secondary img-fluid"
+                  src="../assets/img/career-counseling.jpg" alt="">
+                <h5 class="display-4 fw-medium text-dark p-3">Career counseling</h5>
+                <p class="text-dark p-2 lead">Career counseling is for both students who are about to decide their
+                  careers
+                  and
+                  professionals, to guide them on their professional growth trajectory.
+                  <a href="#" onclick="onClickLearnMore()" class="text-reset text-info-emphasis">click to Learn
+                    more</a>.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="carousel-item">
+              <img src="../assets/img/education-counseling.jpg" class="bg-img d-block w-100 img-fluid" alt="...">
+
+              <div class="carousel-caption d-none d-md-block">
+                <img class="rounded-4 border border-2 border-secondary img-fluid"
+                  src="../assets/img/education-counseling.jpg" alt="">
+                <h5 class="display-4 fw-medium text-dark p-3">Educational counseling</h5>
+                <p class="text-dark p-2 lead">Academics is one of the biggest reasons of stress and anxiety in students
+                  and
+                  parents
+                  alike. So academic counseling is counseling pertaining to time management, procrastination and study
+                  tips.
+                  <a href="#" onclick="onClickLearnMore()" class="text-reset text-info-emphasis">click to Learn
+                    more</a>.
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+
+    <div class="container-fluid bg-dark p-5">
+
+      <div class="display-5 text-center text-white">PEACE</div>
+      <div class="lead text-center text-secondary">CHANGE BEGIN TODAY</div>
+
+      <div class="pt-3 text-center text-white">Peace is the best online counseling and therapy consultation Website in
+        India. Consult the Best Online Psychologist, Online Psychiatrist, Mental health therapist, Counsellor and
+        Psychotherapist now via chat, phone or video call. Reclaim Your Inner Harmony. Talk to the Best Online
+        Psychologist in India now.</div>
+
+
+
+      <div class="p-4 text-center text-white">
+        Follow us
+      </div>
+
+      <div class="text-white text-center container-fluid">
+
+
+        <div class="row justify-content-center">
+
+
+          <div class="col-1">
+            <h1 onclick="onClickSocialMedia(1)"><i class="bi bi-facebook"></i></h1>
+          </div>
+          <div class="col-1">
+            <h1 onclick="onClickSocialMedia(2)"><i class="bi bi-instagram"></i></h1>
+          </div>
+          <div class="col-1">
+            <h1 onclick="onClickSocialMedia(3)"><i class="bi bi-twitter"></i></h1>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </footer>
+
+
+
+
+  <!-- Log out model -->
+  <div class="modal fade" id="logoutModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Log out</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure, do you want to log out?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" onclick="onClickLogOut()">Log out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <img src="logo.jpg"style="width: 100px; height: 100px;">
+
+    <div class="main">
+        <div class="menu">
+            <link rel="stylesheet" href="home.css">
+            <ul>
+                <li><a href="..\user\login\login.html">My Account</a></li>
+                <li><a href="..\user\register\register.html">Register</a></li>
+                <li><a href="..\about\about.html">About</a></li>
+                <li><a href="..\invite\Invite.html">Invite</a></li>
+                <li><a href="..\service\service.html">Service</a></li> 
+                <li><a href="..\feedback\feedback.html">Feedback</a></li>
+
+                <div class="dropdown">
+                    <span>Admin</span>
+                    <div class="dropdown-content">
+                      <li><a href="..\adminlogin\adminlogin.html">Login</a></li>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <span>Doctor</span>
+                    <div class="dropdown-content">
+                      <li><a href="..\doctor\doctorlogin\doctorlogin.html">Login</a></li>
+                      <li><a href="..\doctor\doctorregister\doctorregister.html">Register</a></li>
+                    </div>
+                </div>
+                
+               
+        </div>
+    </div>
+
+    <div class="title">
+        <h1> 
+          Welcome to Our Counseling Service
+        </h1>
+    </div>
+        -->
+  <!--<div class="title">
+        <h1> 
+            Online Personal Counseling System
+        </h1>
+    </div>-->
+
+  <!--<section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Our Counseling Platform</h1>
+        <p>Find peace of mind and support for your mental well-being.</p>
+        <a href="#" class="cta-btn blinking-text">Get Started</a> <!-- Added "blinking-text" class 
+      </div>
+    </section>-->
+
+
+  <!-- jquery link -->
+  <script src="../assets/js/jquery.min.js"></script>
+
+  <!-- Bootstrap js -->
+  <script src="../assets/js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+
+  <script src="home.js"></script>
+
+</body>
+
+<!-- <head>
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+
+      text-decoration: none;
+      color: #f31823f3;
+      font-family: Arial;
+      font-weight: bold;
+      transition: .3s ease;
+
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #d9d0db;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(255, 8, 82, 0.2);
+      padding: 12px 16px;
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head> -->
+
+</html>
